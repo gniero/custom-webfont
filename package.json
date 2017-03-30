@@ -1,0 +1,28 @@
+{
+  "name": "custom-webfont",
+  "version": "0.0.0",
+  "description": "Demo project for custom webfont",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gniero/custom-webfont.git"
+  },
+  "keywords": [
+    "webfont",
+    "svg",
+    "font"
+  ],
+  "author": "Guilherme Niero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gniero/custom-webfont/issues"
+  },
+  "homepage": "https://github.com/gniero/custom-webfont#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1"
+  }
+}

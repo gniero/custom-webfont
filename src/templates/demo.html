@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/<%= fontName %>.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>
+                <%= fontName %>
+            </h1>
+            <p>Referência de utilização da fonte</p>
+        </div>
+        <div class="row">
+            <% _.each(glyphs, function(glyph) { %>
+                <div class="col-md-2 col-xs-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <i class="<%= className %> <%= className %>-lg <%= className %>-<%= glyph.name %>"></i>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <%= className %>-<%= glyph.name %>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+</body>
